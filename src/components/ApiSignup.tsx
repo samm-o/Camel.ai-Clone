@@ -19,7 +19,7 @@ export default function ApiSignup() {
                 className="button-icon" 
                 src="https://camelai.com/assets/images/chevron-right-black.png" 
                 alt="chevron right" 
-                width={20} 
+                width={8} 
                 height={20}
               />
             </button>

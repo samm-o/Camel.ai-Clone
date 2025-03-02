@@ -5,52 +5,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Header() {
-  useEffect(() => {
-    // Hamburger menu functionality
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    
-    if (hamburgerMenu && dropdownMenu) {
-      // Show/hide dropdown menu
-      const handleHamburgerClick = () => {
-        dropdownMenu.classList.toggle('show');
-      };
-      
-      hamburgerMenu.addEventListener('click', handleHamburgerClick);
-      
-      // Close dropdown menu when clicking outside
-      const handleDocumentClick = (event: MouseEvent) => {
-        if (!dropdownMenu.contains(event.target as Node) && 
-            !hamburgerMenu.contains(event.target as Node)) {
-          dropdownMenu.classList.remove('show');
-        }
-      };
-      
-      document.addEventListener('click', handleDocumentClick);
-      
-      // Scroll detection for changing nav color
-      const handleScroll = () => {
-        const navbar = document.getElementById('navbar');
-        if (navbar) {
-          if (window.scrollY > 70) {
-            navbar.classList.add('scrolled');
-          } else {
-            navbar.classList.remove('scrolled');
-          }
-        }
-      };
-      
-      window.addEventListener('scroll', handleScroll);
-      
-      // Clean up event listeners
-      return () => {
-        hamburgerMenu.removeEventListener('click', handleHamburgerClick);
-        document.removeEventListener('click', handleDocumentClick);
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, []);
-  
   return (
     <header>
       <nav id="navbar">
@@ -60,7 +14,7 @@ export default function Header() {
               <Image 
                 src="https://camelai.com/assets/images/main-camelai.png" 
                 alt="camelAI logo" 
-                width={150} 
+                width={100} 
                 height={40} 
               />
             </Link>

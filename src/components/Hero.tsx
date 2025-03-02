@@ -22,7 +22,7 @@ export default function Hero() {
                   className="button-icon" 
                   src="https://camelai.com/assets/images/chevron-right-black.png" 
                   alt="chevron right"
-                  width={16}
+                  width={8}
                   height={28}
                 />
               </Link>
@@ -32,7 +32,7 @@ export default function Hero() {
                   className="button-icon white" 
                   src="https://camelai.com/assets/images/chevron-right-black.png" 
                   alt="chevron right"
-                  width={16}
+                  width={8}
                   height={28}
                 />
               </Link>
