@@ -2683,7 +2683,7 @@ img.mobile-product-logo {
 
 .client-logos-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); 
   gap: 1rem;
   width: 50%;
   max-width: 1200px;
